@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Cart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Assets/CSS/Style.css"/>
+  <link rel="stylesheet" href="Assets/CSS/LoginStyle.css">
+</head>
+<body>
+  <!-- Reusable Navbar -->
+  <div id="navbar"></div>
+
+    <!-- Login form -->
+    <div class="form-content">
+        <div id="login-form">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Login</h2>
+            <form class="user-form" onsubmit="login(event)">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div id="user-info" class="user-info hidden">
+            <h3>Welcome, <span id="username-display"></span>!</h3>
+            <button class="logout-btn" onclick="logout()">Logout</button>
+        </div>
+    </div>
+  
+  <!-- Reusable Footer -->
+  <div id="footer"></div>
+
+  <script src="Assets/JavaScript/Login.js"></script>
+  <script src="Assets/JavaScript/Layout.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>

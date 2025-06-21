@@ -1,0 +1,93 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Centered Login Modal */
+.form-content {
+  width: 100%;
+  max-width: 400px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Close Button */
+.form-content .close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 1.5rem;
+  color: #999;
+  cursor: pointer;
+}
+
+/* Form Layout */
+.user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.user-form input {
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: border 0.3s;
+}
+
+.user-form input:focus {
+  border-color: #3c6e71;
+  outline: none;
+}
+
+/* Login Button */
+.user-form button {
+  background-color: #3c6e71;
+  color: #fff;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.user-form button:hover {
+  background-color: #2b4d50;
+}
+
+/* User Info After Login */
+.user-info {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.user-info h3 {
+  font-weight: 500;
+  color: #333;
+}
+
+.logout-btn {
+  margin-top: 1rem;
+  background-color: #e63946;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #b71c1c;
+}
+
+/* Hidden Class */
+.hidden {
+  display: none;
+}
